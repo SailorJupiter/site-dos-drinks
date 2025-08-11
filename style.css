@@ -1,65 +1,75 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fafafa;
-    color: #333;
-    padding: 20px;
-    text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  padding: 20px;
+  text-align: center;
 }
 
+
 h1 {
-    color: #ff6600;
-    margin-bottom: 20px;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .barra-pesquisa {
-    display: flex;
-    max-width: 400px;
-    margin: 0 auto 20px;
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto 20px;
 }
 
 .barra-pesquisa input {
-    flex: 1;
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 8px 0 0 8px;
-    outline: none;
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  outline: none;
 }
 
 .barra-pesquisa button {
-    padding: 10px 15px;
-    font-size: 18px;
-    background-color: #ff6600;
-    color: white;
-    border-radius: 0 8px 8px 0;
-    cursor: pointer;
-    transition: background 0.3s;
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: #ff6600;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 .barra-pesquisa button:hover {
-    background-color: #e65c00;
+  background-color: #e65c00;
 }
 
 #resultado {
-    background: white;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 1);
-    text-align: left;
+  background: white;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 1);
+  text-align: left;
 }
 
 #resultado img {
-    width: 100%;
-    border-radius: 8px;
-    margin-top: 10px;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  #resultado img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
 }
 
 /* Card do resultado */
@@ -79,7 +89,6 @@ h1 {
   padding-left: 20px;
 }
 
-/* Lista de matches */
 .matches-list {
   list-style: none;
   display: grid;
@@ -95,7 +104,7 @@ h1 {
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 .match-item img {
   width: 55px;
@@ -106,17 +115,29 @@ h1 {
 
 /* Ajustes para mobile */
 @media (max-width: 500px) {
-    .barra-pesquisa {
-        flex-direction: column;
-    }
+  .barra-pesquisa {
+    flex-direction: column;
+  }
 
-    .barra-pesquisa input,
-    .barra-pesquisa button {
-        border-radius: 8px;
-        margin: 0;
-    }
+  .barra-pesquisa input,
+  .barra-pesquisa button {
+    border-radius: 8px;
+    margin: 0;
+  }
 
-    .matches-list {
-        grid-template-columns: 1fr;
-    }
+  .matches-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; 
+  color: #333;
+  padding: 20px;
+  text-align: center;
 }
